@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ContactsDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_slide">SlideActivity</string>
+    <string name="pref_sampleRate_key" translatable="false">Sample Rate</string>
+    <string name="pref_sampleRate_default" translatable="false">8000</string>
+
+</resources>

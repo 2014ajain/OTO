@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ImageView>
+
+    <ToggleButton android:text="Start"
+        android:id="@+id/startStopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/recordDisplay"
+        android:layout_toRightOf="@+id/freqDisplay1"
+        android:layout_toEndOf="@+id/freqDisplay1">
+    </ToggleButton>
+
+    <ToggleButton android:text="Play"
+        android:id="@+id/startStopPlay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:text="Play"
+        android:id="@+id/startStopPlay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignBottom="@+id/freqDisplay2"
+        android:layout_alignLeft="@+id/startStopPlay1"
+        android:layout_alignStart="@+id/startStopPlay1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tone 1:"
+        android:id="@+id/toneFreq1"
+        android:layout_gravity="right|left"
+        android:layout_alignBottom="@+id/startStopPlay1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tone 2:"
+        android:id="@+id/toneFreq2"
+        android:layout_gravity="right|left"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/seekBar1"
+        android:layout_alignLeft="@+id/seekBar1"
+        android:layout_alignStart="@+id/seekBar1" />
+
+    <TextView
+        android:id="@+id/freqDisplay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  0"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignBaseline="@+id/toneFreq1"
+        android:layout_alignBottom="@+id/toneFreq1"
+        android:layout_toLeftOf="@+id/startStopPlay1"
+        android:layout_toStartOf="@+id/startStopPlay1" />
+
+    <TextView
+        android:id="@+id/freqDisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  0"
+        android:layout_above="@+id/seekBar2"
+        android:layout_alignLeft="@+id/freqDisplay1"
+        android:layout_alignStart="@+id/freqDisplay1" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_below="@+id/freqDisplay1"
+        android:layout_alignLeft="@+id/toneFreq1"
+        android:layout_alignStart="@+id/toneFreq1"
+        android:layout_alignRight="@+id/startStopPlay1"
+        android:layout_alignEnd="@+id/startStopPlay1" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:indeterminate="false"
+        android:layout_below="@+id/toneFreq2"
+        android:layout_alignLeft="@+id/toneFreq2"
+        android:layout_alignStart="@+id/toneFreq2"
+        android:layout_alignRight="@+id/startStopPlay2"
+        android:layout_alignEnd="@+id/startStopPlay2" />
+
+    <TextView
+        android:id="@+id/recordDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  0"
+        android:layout_above="@+id/startStopPlay1"
+        android:layout_alignLeft="@+id/freqDisplay1"
+        android:layout_alignStart="@+id/freqDisplay1"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recording:"
+        android:id="@+id/recordFreq"
+        android:layout_gravity="right|left"
+        android:layout_alignTop="@+id/recordDisplay"
+        android:layout_alignLeft="@+id/toneFreq1"
+        android:layout_alignStart="@+id/toneFreq1" />
+
+</RelativeLayout>
+
